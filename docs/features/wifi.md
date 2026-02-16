@@ -225,6 +225,19 @@ This feature does a lot of things at the same time, such as:
 
 [Responder](https://github.com/lgandx/Responder) is a well known tool for exploiting infrastructures, one of the things it does is LLMNR Poisoning, which is what this function in Bruce does (thanks to [7h30th3r0n3](https://github.com/7h30th3r0n3)).
 
+## SOCKS4 Proxy
+
+Bruce can act as a **SOCKS4 proxy**, default port **1080**. Traffic from your apps goes through the ESP32.
+
+**How to start:** WiFi → **SOCKS4 Proxy**. The screen shows the ESP32 IP and port; press **Esc** to exit.
+
+**Use it from your PC or phone:**
+
+- **curl:** `curl -x socks4://<esp32_ip>:1080 http://example.com`
+- **proxychains:** On `proxychains.conf` set `socks4 <esp32_ip> 1080`, then run `proxychains <your_command>`.
+
+Make sure the device running curl/SSH/proxychains is on the same network as the ESP32 (e.g. same Wi‑Fi or hotspot).
+
 
 ## Config
 
