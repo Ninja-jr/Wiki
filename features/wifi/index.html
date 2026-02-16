@@ -852,6 +852,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#socks4-proxy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SOCKS4 Proxy
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#config" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -3702,6 +3713,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#socks4-proxy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SOCKS4 Proxy
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#config" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -3956,6 +3978,15 @@
 </ul>
 <h2 id="responder">Responder<a class="headerlink" href="#responder" title="Permanent link">#</a></h2>
 <p><a href="https://github.com/lgandx/Responder">Responder</a> is a well known tool for exploiting infrastructures, one of the things it does is LLMNR Poisoning, which is what this function in Bruce does (thanks to <a href="https://github.com/7h30th3r0n3">7h30th3r0n3</a>).</p>
+<h2 id="socks4-proxy">SOCKS4 Proxy<a class="headerlink" href="#socks4-proxy" title="Permanent link">#</a></h2>
+<p>Bruce can act as a <strong>SOCKS4 proxy</strong>, default port <strong>1080</strong>. Traffic from your apps goes through the ESP32.</p>
+<p><strong>How to start:</strong> WiFi → <strong>SOCKS4 Proxy</strong>. The screen shows the ESP32 IP and port; press <strong>Esc</strong> to exit.</p>
+<p><strong>Use it from your PC or phone:</strong></p>
+<ul>
+<li><strong>curl:</strong> <code>curl -x socks4://&lt;esp32_ip&gt;:1080 http://example.com</code></li>
+<li><strong>proxychains:</strong> On <code>proxychains.conf</code> set <code>socks4 &lt;esp32_ip&gt; 1080</code>, then run <code>proxychains &lt;your_command&gt;</code>.</li>
+</ul>
+<p>Make sure the device running curl/SSH/proxychains is on the same network as the ESP32 (e.g. same Wi‑Fi or hotspot).</p>
 <h2 id="config">Config<a class="headerlink" href="#config" title="Permanent link">#</a></h2>
 <h3 id="add-evil-wifi">Add Evil WiFi<a class="headerlink" href="#add-evil-wifi" title="Permanent link">#</a></h3>
 <p>Adds an SSID into the list so you can choose it with ease when opening an Evil Portal.</p>
@@ -3981,7 +4012,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="January 7, 2026 18:18:43 UTC">January 7, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="February 16, 2026 19:21:38 UTC">February 16, 2026</span>
   </span>
 
     
