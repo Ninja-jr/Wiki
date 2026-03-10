@@ -240,7 +240,7 @@ Make sure the device running curl/SSH/proxychains is on the same network as the 
 
 ## Wifi Password Recovery
 
-This feature recovers WiFi passwords using a wordlist of your choice. It attempts to crack a **captured WPA/WPA2 handshake** by testing passwords from the selected wordlist until the correct one is found.
+This feature recovers WiFi passwords using a wordlist of your choice. It attempts to crack a **captured handshake** by testing passwords from the selected wordlist until the correct one is found.
 
 ### Usage
 
