@@ -238,6 +238,29 @@ Bruce can act as a **SOCKS4 proxy**, default port **1080**. Traffic from your ap
 
 Make sure the device running curl/SSH/proxychains is on the same network as the ESP32 (e.g. same Wi‑Fi or hotspot).
 
+## Wifi Password Recovery
+
+This feature recovers WiFi passwords using a wordlist of your choice. It attempts to crack a **captured handshake** by testing passwords from the selected wordlist until the correct one is found.
+
+### Usage
+
+1. Open **WiFi → Wifi Password Recovery**
+2. Select a **wordlist**
+3. Select a **handshake capture (.pcap/.cap)**
+4. Wait while Bruce tests passwords from the list
+5. If the password is found, it will be displayed on screen
+
+### Notes
+
+- Requires a **valid captured handshake**
+- Wordlists should be stored in `/wordlists`
+- Handshake captures should be stored in `/BrucePCAP`
+- Press **SEL** to stop the process at any time
+- User should manually put **WORDLIST** inside `/wordlists`
+
+
+
+
 
 ## Config
 
