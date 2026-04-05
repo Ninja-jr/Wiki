@@ -73,10 +73,9 @@ The device thinks "Oh, this ESP32 is the network I'm looking for" and tries to c
 
 Main Karma Modes
 
-Mode What it does
-Passive Just listens for probes, no responses
-Broadcast Actively advertises SSIDs from database
-Full Both listens AND broadcasts
+· Passive Just listens for probes, no responses.
+· Broadcast Actively advertises SSIDs from database.
+· Full Both listens AND broadcasts.
 
 Attack Settings (Toggle ON/OFF)
 
